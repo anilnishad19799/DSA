@@ -23,8 +23,6 @@ Node* createNode(int val)
 Node* createTree()
 {
 
-    // Node* root = NULL;
-
     int data;
     cout<<endl;
     cout<<"Enter data : ";

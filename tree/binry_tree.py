@@ -1,12 +1,8 @@
 class createNode:
-    def Node(self, key):
+    def __init__(self, key):
         self.val = key
         self.left = None
         self.right = None
-    
-    def createNode(self, key):
-        return self.Node(key)
-
 
     def createTree(self):
 
@@ -18,7 +14,7 @@ class createNode:
         if n==-1:
             return None
         
-        root = self.createNode(n)
+        root = createNode(n)
 
         print("Enter left node data : ")
         root.left = self.createTree()
@@ -28,7 +24,7 @@ class createNode:
         
 
 if __name__=='__main__':
-    create_tree_obj = createNode()
+    create_tree_obj = createNode(5)
     print("1. Implement Binary tree")
     print("2. Exit")
 
