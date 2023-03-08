@@ -54,25 +54,20 @@ def printReverseCurrentNode(root, level):
 
 def reverseLeveOrder2(root):
     queue = [root]
-    queue2 = [
-        
-    ]
+    queue2 = []
 
     # curr_node = root
-    try:
-        while len(queue)>0:
+    while len(queue)>0:
 
-            curr_node = queue.pop(0)
-            print("Curr node", curr_node.key)
-            queue2.insert(0, curr_node.key)
-            
-            if root.right is not None:
-                queue.append(curr_node.right)
+        curr_node = queue.pop(0)
+        print("Curr node", curr_node.key)
+        queue2.insert(0, curr_node.key)
+        
+        if curr_node.right is not None:
+            queue.append(curr_node.right)
 
-            if root.left is not None:
-                queue.append(curr_node.left)
-    except:
-        pass
+        if curr_node.left is not None:
+            queue.append(curr_node.left)
 
     return queue2
 
