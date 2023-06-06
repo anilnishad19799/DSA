@@ -1,0 +1,5 @@
+vocode[io]==0.1.110
+gpt4all==0.3.0
+python-dotenv==1.0.0
+pygpt4all==1.1.0
+
